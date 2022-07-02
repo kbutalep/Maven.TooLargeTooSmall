@@ -12,7 +12,7 @@ public class Main {
         int userGuess = askGuess.nextInt();
         int min = 1;
         int max = 10;
-        double randomNumber = (Math.random() * (max - min)) + min;
+        double randomNumber = (int)(Math.random() * (max - min)) + min;
         while (userGuess != randomNumber){
             if (userGuess > randomNumber){
                 System.out.println("Too Large");
